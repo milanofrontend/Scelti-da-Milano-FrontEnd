@@ -1,0 +1,69 @@
+/*
+* Color variables
+*/
+/*
+* Typography
+*/
+body {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+@keyframes forSale {
+  from {
+    border-style: solid; }
+  to {
+    border-style: dashed; } }
+
+.reveal {
+  box-sizing: border-box;
+  background: #e6da1a;
+  color: #1e1e1e; }
+  .reveal h1, .reveal .title {
+    font-family: 'Passion One', cursive;
+    font-weight: 700;
+    font-size: 129.44px;
+    padding-bottom: 20px;
+    color: #ee1443;
+    text-shadow: 5px 5px 0px #2250a9;
+    text-align: left; }
+  .reveal h3 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 77.664px;
+    padding-bottom: 20px;
+    color: #ee1443; }
+  .reveal blockquote {
+    font-family: 'Share', cursive;
+    font-size: 38.832px;
+    color: #2250a9;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    padding: 2rem 0;
+    padding-bottom: 0.5rem; }
+  .reveal .blockquote-source {
+    color: #ee1443;
+    width: 100%;
+    text-align: right; }
+  .reveal a {
+    font-family: 'Passion One', cursive;
+    font-size: 38.832px;
+    color: #ee1443;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.25rem;
+    width: 100%; }
+    .reveal a:hover {
+      text-shadow: 4px 4px 0px rgba(34, 80, 169, 0.25);
+      transition: 0.4s ease-out all; }
+  .reveal p {
+    font-family: 'Share', cursive;
+    font-size: 38.832px;
+    color: #2250a9;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+    text-align: left; }

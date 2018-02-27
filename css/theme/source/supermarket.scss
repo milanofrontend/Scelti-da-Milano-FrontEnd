@@ -1,0 +1,155 @@
+/*
+* Color variables
+*/
+$yellow-lidl: #fff100;
+$light-yellow-lidl: desaturate($yellow-lidl, 20%);
+$blue-lidl: #2250a9;
+$red-lidl: #ee1443;
+
+$black-friday: #1e1e1e;
+$medium-dark: #333;
+
+/*
+* Typography
+*/
+$font-base: 16px;
+
+$ratios:(
+   gold: 1.618,
+   des: 1.5,
+   mob: 1.9
+);
+
+$one-ratio: 1.618;
+
+$measures:(
+   rocco: 5,
+   biggest: 4,
+   bigger: 3,
+   big: 2,
+   quite-nor: 1.5,
+   nor: 1,
+   sm: 0.75,
+   xsm: 0.5,
+   xxsmall: 0.25
+);
+
+@function fontsize($ratio, $measure, $base) {
+  $size: ($measure * $ratio) * $base;
+  @return $size;
+}
+
+@mixin fontDef($type: 'mainHeading', $color: $black-friday) {
+  @if $type == 'mainHeading' {
+    font-family: 'Passion One', cursive;
+    font-weight: 700;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, rocco), $font-base);
+    padding-bottom: 20px;
+    color: $color;
+  }
+  @else if $type == 'subHeading'{
+    font-family: 'Cutive Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, bigger), $font-base);
+    padding-bottom: 20px;
+    color: $color;
+  }
+  @else if $type == 'paragraph'{
+    // font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: 'Share', cursive;
+    // font-family: 'Cousine', monospace;
+    // font-family: 'Cutive Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+  }
+  @else if $type == 'link'{
+    // font-family: 'Share', cursive;
+    font-family: 'Passion One', cursive;
+    // font-family: 'Cousine', monospace;
+    // font-family: 'Cutive Mono', monospace;
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    color: $color;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+@keyframes forSale {
+  from {
+    border-style: solid;
+  }
+  to {
+    border-style: dashed;
+  }
+}
+
+.reveal {
+  box-sizing: border-box;
+  // background: $yellow-lidl;
+  background: $light-yellow-lidl;
+  color: $black-friday;
+
+  h1, .title {
+    @include fontDef('mainHeading', $red-lidl);
+    text-shadow: 5px 5px 0px $blue-lidl;
+    text-align: left;
+  }
+  
+  h3 {
+    @include fontDef('subHeading', $red-lidl);
+  }
+
+  blockquote {
+    @include fontDef('paragraph', $blue-lidl);
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    padding: 2rem 0;
+    padding-bottom: 0.5rem;
+    // margin-left: 4rem;
+
+    // &::before {
+    //   color: $blue-lidl;
+    //   line-height: 0;
+    //   content: "\201C"; // quote entity
+    //   font-size: 10rem;
+    // }
+  }
+  
+  .blockquote-source {
+    color: $red-lidl;
+    width: 100%;
+    text-align: right;
+  }
+  
+  a {
+    @include fontDef('link', $red-lidl);
+    // text-shadow: 2px 2px 0px $blue-lidl;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    // margin: 3rem 0;
+    padding: 0.25rem;
+    // border: 4px dashed red;
+    width: 100%;
+
+    &:hover {
+      text-shadow: 4px 4px 0px transparentize($blue-lidl, 0.75);
+      transition: 0.4s ease-out all;
+      // animation: 0.25s infinite alternate forSale;
+    }
+  }
+
+  p {
+    @include fontDef('paragraph', $blue-lidl);
+    //text-shadow: 1px 3px 10px transparentize($black-friday, 0.8);
+    text-align: left;
+  }
+
+}
