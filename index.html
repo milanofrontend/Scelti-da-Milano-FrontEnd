@@ -1,49 +1,118 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Le scelte per voi da Milano FrontEnd</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cousine|Cutive+Mono|Passion+One|Paytone+One|Saira+Semi+Condensed|Share" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/supermarket.css">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="slide-in fade-out">
+          <h1 class="title">Scelti per voi da Milano FrontEnd</h1>
+          <p>Solo da noi puoi scoprire quali sono le news frontend più hot del mese</p>
+          <!-- <p class="author">@giucot_</p> -->
+        </section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <section data-transition="slide-in fade-out">
+          <h1 class="title">HTTPS per tutti!</h1>
+          <!-- <p>Entro Luglio 2018 tutti i siti che non adotteranno il protocollo HTTPS, saranno identificati come non sicuri</p> -->
+          <blockquote cite="https://security.googleblog.com">
+            “Beginning in July 2018 with the release of Chrome 68, Chrome will mark all HTTP sites as “not secure”.
+          </blockquote>
+          <p class="blockquote-source">Google Security Blog</p>
+          <div>
+            <a href="https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html">Article Link</a>
+          </div>
+          <!-- <p>Come i siti più piccoli e home made affronteranno la sfida?</p> -->
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section data-transition="slide-in fade-out">
+            <h1 class="title">WebPack 4 is here</h1>
+            <!-- <p>Entro Luglio 2018 tutti i siti che non adotteranno il protocollo HTTPS, saranno identificati come non sicuri</p> -->
+            <blockquote cite="https://security.googleblog.com">
+              “We have said this many times in the past, but the community is what makes webpack strong, sustainable, and vibrant in this JavaScript Renaissance we live in today.” 
+            </blockquote>
+            <p class="blockquote-source">Sean T. Larkin</p>
+            <div>
+              <a href="https://medium.com/webpack/webpack-4-released-today-6cdb994702d4">Article Link</a>
+            </div>
+            <!-- <p>Come i siti più piccoli e home made affronteranno la sfida?</p> -->
+          </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+          <section data-transition="slide-in fade-out">
+            <h1 class="title">Glitch: is not matrix</h1>
+            <!-- <p>Entro Luglio 2018 tutti i siti che non adotteranno il protocollo HTTPS, saranno identificati come non sicuri</p> -->
+            <blockquote cite="https://dev.to/jesswest/glitch-youre-not-in-the-matrix-mgj">
+              “Glitch gives power back to the user for real life examples; it’s an online IDE with the power of collaboration and community features like in GitHub. ” 
+            </blockquote>
+            <p class="blockquote-source">Jess West</p>
+            <div>
+              <a href="https://dev.to/jesswest/glitch-youre-not-in-the-matrix-mgj">Article Link</a>
+            </div>
+            <!-- <p>Come i siti più piccoli e home made affronteranno la sfida?</p> -->
+          </section>
+
+          <section data-transition="slide-in fade-out">
+            <h1 class="title">In Defense of Utility-First CSS</h1>
+            <!-- <p>Entro Luglio 2018 tutti i siti che non adotteranno il protocollo HTTPS, saranno identificati come non sicuri</p> -->
+            <blockquote cite="https://medium.freecodecamp.org/in-defense-of-utility-first-css-4f406acee6fb">
+              “Despite its growing popularity, utility-first CSS still hasn’t convinced everyone.”
+            </blockquote>
+            <p class="blockquote-source">Sarah Dayan</p>
+            <div>
+              <a href="https://medium.freecodecamp.org/in-defense-of-utility-first-css-4f406acee6fb">Article Link</a>
+            </div>
+            <!-- <p>Come i siti più piccoli e home made affronteranno la sfida?</p> -->
+          </section>
+
+          <section data-transition="slide-in fade-out">
+            <h1 class="title">CSS transform-box</h1>
+            <!-- <p>Entro Luglio 2018 tutti i siti che non adotteranno il protocollo HTTPS, saranno identificati come non sicuri</p> -->
+            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box">
+              “The transform-box property allows defining which reference box to use when computing 'transform' and 'transform-origin'” 
+            </blockquote>
+            <p class="blockquote-source">Mozilla Web Docs</p>
+            <div>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box">Article Link</a>
+            </div>
+            <!-- <p>Come i siti più piccoli e home made affronteranno la sfida?</p> -->
+          </section>
+            
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
 </html>
