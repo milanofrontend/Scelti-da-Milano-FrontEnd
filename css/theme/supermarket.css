@@ -23,8 +23,8 @@ body {
     font-weight: 700;
     font-size: 129.44px;
     padding-bottom: 20px;
-    color: #ee1443;
-    text-shadow: 5px 5px 0px #2250a9;
+    color: #2250a9;
+    text-shadow: 5px 5px 0px #ee1443;
     text-align: left; }
   .reveal h3 {
     font-family: 'Cutive Mono', monospace;
@@ -34,7 +34,7 @@ body {
   .reveal blockquote {
     font-family: 'Share', cursive;
     font-size: 38.832px;
-    color: #2250a9;
+    color: #ee1443;
     line-height: 1.2;
     padding-bottom: 0.5rem;
     display: inline-flex;
@@ -43,7 +43,7 @@ body {
     padding: 2rem 0;
     padding-bottom: 0.5rem; }
   .reveal .blockquote-source {
-    color: #ee1443;
+    color: #2250a9;
     width: 100%;
     text-align: right; }
   .reveal a {
@@ -58,12 +58,12 @@ body {
     padding: 0.25rem;
     width: 100%; }
     .reveal a:hover {
-      text-shadow: 4px 4px 0px rgba(34, 80, 169, 0.25);
+      text-shadow: 4px 4px 0px rgba(238, 20, 67, 0.25);
       transition: 0.4s ease-out all; }
   .reveal p {
     font-family: 'Share', cursive;
     font-size: 38.832px;
-    color: #2250a9;
+    color: #ee1443;
     line-height: 1.2;
     padding-bottom: 0.5rem;
     text-align: left; }

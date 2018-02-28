@@ -96,8 +96,8 @@ body {
   color: $black-friday;
 
   h1, .title {
-    @include fontDef('mainHeading', $red-lidl);
-    text-shadow: 5px 5px 0px $blue-lidl;
+    @include fontDef('mainHeading', $blue-lidl);
+    text-shadow: 5px 5px 0px $red-lidl;
     text-align: left;
   }
   
@@ -106,7 +106,7 @@ body {
   }
 
   blockquote {
-    @include fontDef('paragraph', $blue-lidl);
+    @include fontDef('paragraph', $red-lidl);
     display: inline-flex;
     align-items: center;
     text-align: left;
@@ -123,7 +123,7 @@ body {
   }
   
   .blockquote-source {
-    color: $red-lidl;
+    color: $blue-lidl;
     width: 100%;
     text-align: right;
   }
@@ -140,14 +140,14 @@ body {
     width: 100%;
 
     &:hover {
-      text-shadow: 4px 4px 0px transparentize($blue-lidl, 0.75);
+      text-shadow: 4px 4px 0px transparentize($red-lidl, 0.75);
       transition: 0.4s ease-out all;
       // animation: 0.25s infinite alternate forSale;
     }
   }
 
   p {
-    @include fontDef('paragraph', $blue-lidl);
+    @include fontDef('paragraph', $red-lidl);
     //text-shadow: 1px 3px 10px transparentize($black-friday, 0.8);
     text-align: left;
   }
