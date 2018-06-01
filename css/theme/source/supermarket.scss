@@ -42,7 +42,7 @@ $measures:(
 @mixin fontDef($type: 'mainHeading', $color: $black-friday) {
   @if $type == 'mainHeading' {
     font-family: 'Passion One', cursive;
-    font-weight: 700;
+    font-weight: 400;
     font-size: fontsize(map-get($ratios, gold), map-get($measures, rocco), $font-base);
     padding-bottom: 20px;
     color: $color;
