@@ -43,7 +43,7 @@ $measures:(
   @if $type == 'mainHeading' {
     font-family: 'Passion One', cursive;
     font-weight: 400;
-    font-size: fontsize(map-get($ratios, gold), map-get($measures, rocco), $font-base);
+    font-size: fontsize(map-get($ratios, gold), map-get($measures, biggest), $font-base);
     padding-bottom: 20px;
     color: $color;
   }
