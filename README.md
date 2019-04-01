@@ -1,3 +1,3 @@
-# Supermarket Reveal theme
-## From Reveal.js a new scss theme, isperation consumer good 
+# Scelti da Milano Front End
 
+La slide di Milano FrontEnd utilizzate per mostrare gli articoli scelti da noi ogni mese.
