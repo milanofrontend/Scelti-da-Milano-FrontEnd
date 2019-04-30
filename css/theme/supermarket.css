@@ -18,7 +18,8 @@ body {
   box-sizing: border-box;
   background: #e6da1a;
   color: #1e1e1e; }
-  .reveal h1, .reveal .title {
+  .reveal h1,
+  .reveal .title {
     font-family: 'Passion One', cursive;
     font-weight: 400;
     font-size: 103.552px;
@@ -49,6 +50,10 @@ body {
     color: #2250a9;
     width: 100%;
     text-align: right; }
+  .reveal .link-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
   .reveal a {
     font-family: 'Passion One', cursive;
     font-size: 32.36px;
@@ -58,7 +63,7 @@ body {
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    width: 100%;
+    width: 25%;
     position: relative;
     white-space: nowrap; }
     .reveal a::after {
@@ -73,7 +78,7 @@ body {
       max-width: 0; }
     .reveal a:hover::after {
       outline: none;
-      transition: max-width 2s;
+      transition: max-width 0.8s;
       max-width: 100%; }
   .reveal p {
     font-family: 'Roboto Condensed', sans-serif;
