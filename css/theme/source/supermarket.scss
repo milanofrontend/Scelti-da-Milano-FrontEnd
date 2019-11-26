@@ -14,21 +14,25 @@ $medium-dark: #333;
 */
 $font-base: 16px;
 
-$ratios:(gold: 1.618,
-des: 1.5,
-mob: 1.9);
+$ratios: (
+  gold: 1.618,
+  des: 1.5,
+  mob: 1.9
+);
 
 $one-ratio: 1.618;
 
-$measures:(rocco: 5,
-biggest: 4,
-bigger: 3,
-big: 2,
-quite-nor: 1.25,
-nor: 1,
-sm: 0.75,
-xsm: 0.5,
-xxsmall: 0.25);
+$measures: (
+  rocco: 5,
+  biggest: 4,
+  bigger: 3,
+  big: 2,
+  quite-nor: 1.25,
+  nor: 1,
+  sm: 0.75,
+  xsm: 0.5,
+  xxsmall: 0.25
+);
 
 @function fontsize($ratio, $measure, $base) {
   $size: ($measure * $ratio) * $base;
@@ -36,38 +40,48 @@ xxsmall: 0.25);
 }
 
 @mixin fontDef($type: 'mainHeading', $color: $black-friday) {
-  @if $type=='mainHeading' {
+  @if $type== 'mainHeading' {
     font-family: 'Passion One', cursive;
     font-weight: 400;
-    font-size: fontsize(map-get($ratios, gold), map-get($measures, biggest), $font-base);
+    font-size: fontsize(
+      map-get($ratios, gold),
+      map-get($measures, biggest),
+      $font-base
+    );
     padding-bottom: 20px;
     color: $color;
-  }
-
-  @else if $type=='subHeading' {
+  } @else if $type== 'subHeading' {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: fontsize(map-get($ratios, gold), map-get($measures, big), $font-base);
+    font-size: fontsize(
+      map-get($ratios, gold),
+      map-get($measures, big),
+      $font-base
+    );
     padding-bottom: 20px;
     color: $color;
-  }
-
-  @else if $type=='paragraph' {
+  } @else if $type== 'paragraph' {
     // font-family: 'Saira Semi Condensed', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     // font-family: 'Cousine', monospace;
     // font-family: 'Cutive Mono', monospace;
-    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    font-size: fontsize(
+      map-get($ratios, gold),
+      map-get($measures, quite-nor),
+      $font-base
+    );
     color: $color;
     line-height: 1.2;
     padding-bottom: 0.5rem;
-  }
-
-  @else if $type=='link' {
+  } @else if $type== 'link' {
     // font-family: 'Share', cursive;
     font-family: 'Passion One', cursive;
     // font-family: 'Cousine', monospace;
     // font-family: 'Cutive Mono', monospace;
-    font-size: fontsize(map-get($ratios, gold), map-get($measures, quite-nor), $font-base);
+    font-size: fontsize(
+      map-get($ratios, gold),
+      map-get($measures, quite-nor),
+      $font-base
+    );
     color: $color;
     line-height: 1.2;
     padding-bottom: 0.5rem;
@@ -99,12 +113,13 @@ body {
   .title {
     @include fontDef('mainHeading', $blue-lidl);
     text-shadow: 5px 5px 0px $red-lidl;
-    text-align: left;
+    text-transform: capitalize;
+    // text-align: left;
   }
 
   h3 {
     @include fontDef('subHeading', $red-lidl);
-    text-align: left;
+    // text-align: left;
   }
 
   blockquote {
@@ -112,7 +127,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    text-align: left;
+    // text-align: left;
     padding: 2rem 0;
     padding-bottom: 0.5rem;
     width: 100%;
@@ -128,14 +143,27 @@ body {
 
   .blockquote-source {
     color: $blue-lidl;
-    width: 100%;
-    text-align: right;
+    padding-bottom: 1rem;
+    // width: 100%;
+    // text-align: right;
   }
 
   .link-wrap {
-    width: 100%;
+    // width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .qr-img {
+    max-width: 12rem;
+    // width: 100%;
+  }
+
+  .qr-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    // transform: translateX(-1rem);
   }
 
   a {
@@ -146,7 +174,7 @@ body {
     display: inline-block;
     // padding: 0.25rem;
     // border: 4px dashed red;
-    width: 25%;
+    // width: 25%;
     position: relative;
     white-space: nowrap;
 
@@ -164,7 +192,6 @@ body {
     }
 
     &:hover {
-
       // text-shadow: 4px 4px 0px $blue-lidl;
       &::after {
         outline: none;
@@ -179,7 +206,6 @@ body {
   p {
     @include fontDef('paragraph', $red-lidl);
     //text-shadow: 1px 3px 10px transparentize($black-friday, 0.8);
-    text-align: left;
+    // text-align: left;
   }
-
 }
